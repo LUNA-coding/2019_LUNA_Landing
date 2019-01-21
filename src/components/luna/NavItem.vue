@@ -3,7 +3,7 @@
     '__luna_header_nav_item': true,
     '__luna_header_nav_item_active': isActive
     }"
-    :style="style" :to="link">
+    :to="link">
     <slot/>
   </router-link>
 </template>
