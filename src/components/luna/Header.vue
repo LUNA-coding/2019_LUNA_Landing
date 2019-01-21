@@ -1,7 +1,7 @@
 <template>
   <header class="__luna_header">
     <LUNA-NavList>
-      <LUNA-NavItem link="/">LUNA Coding</LUNA-NavItem>
+      <LUNA-NavItem link="/">MAIN</LUNA-NavItem>
       <LUNA-NavItem link="/2019">2019 LUNA</LUNA-NavItem>
       <LUNA-NavItem link="/2018">2018 LUNA</LUNA-NavItem>
       <LUNA-NavItem link="/member">MEMBER</LUNA-NavItem>
