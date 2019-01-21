@@ -24,5 +24,6 @@ export default class LUNA_Header extends Vue {
   display: flex;
   padding: 25px;
   justify-content: center;
+  z-index: 1000;
 }
 </style>
