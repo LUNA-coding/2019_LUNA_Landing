@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Main from './views/Main.vue';
+import Main from './pages/Main.vue';
 
 Vue.use(Router);
 
