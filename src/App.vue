@@ -23,8 +23,6 @@ export default class App extends Vue {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
-  background-image: radial-gradient(#437ab5, #061d4e);
-  background-size: 100vw 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

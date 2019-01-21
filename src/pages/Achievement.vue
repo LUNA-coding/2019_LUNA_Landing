@@ -1,13 +1,6 @@
 <template>
-  <section id="Main" class="section">
-    <img class="bg" src="@/assets/img/bg_main.png">
-    <div class="bottom">
-      <div class="social-list">
-        <a class="social-item" href="https://fb.com/lunacoding" target="_blank"><img src="@/assets/img/ic_facebook.png"></a>
-        <a class="social-item" href="https://github.com/LUNA-DIMIGO" target="_blank"><img src="@/assets/img/ic_github.png"></a>
-      </div>
-      <span>Copyrightⓒ 2019 LUNA All rights reserved.</span>
-    </div>
+  <section id="Achievement" class="section">
+    
   </section>
 </template>
 
@@ -20,13 +13,13 @@ export default class Main extends Vue {
 </script>
 
 <style lang="scss">
-body.main {
-  background-image: radial-gradient(#437ab5, #061d4e);
+body.achievement {
+  background-image: linear-gradient(#031444, #396ba3);
 }
 </style>
 
 <style lang="scss" scoped>
-#Main {
+#Achievement {
 }
 .bg {
   position: absolute;
