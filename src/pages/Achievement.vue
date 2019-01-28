@@ -1,14 +1,50 @@
 <template>
   <section id="Achievement" class="section">
-    
+    <div class="top">
+      <img src="@/assets/img/illust.png">
+      <img src="@/assets/img/slogan.png">
+      <img src="@/assets/img/luna.png">
+    </div>
+    <div class="description">
+      <div style="text-align:left;"><span>2017년부터 LUNA는</span></div>
+      <div class="subdesc">
+        <img src="@/assets/img/prize.png">
+        <div class="col">
+          <span class="big">30</span>
+          여개의 대회에서
+        </div>
+        <img src="@/assets/img/money.png">
+        <div class="col">
+          약
+          <span class="big">1,800</span>
+          만원의 상금을
+        </div>
+      </div>
+      <div style="text-align:right;"><span>획득하며 세상을 비추고 있습니다.</span></div>
+    </div>
+    <div id="list">
+      <div class="row" v-for="(p, i) in list" :key="i">
+        <div class="name">{{p[0]}}</div>
+        <div class="desc">{{p[1]}}</div>
+      </div>
+    </div>
+    <img class="bg" src="@/assets/img/bg_achievement.png">
+    <div class="bottom">
+      <div class="social-list">
+        <a class="social-item" href="https://fb.com/lunacoding" target="_blank"><img src="@/assets/img/ic_facebook.png"></a>
+        <a class="social-item" href="https://github.com/LUNA-DIMIGO" target="_blank"><img src="@/assets/img/ic_github.png"></a>
+      </div>
+      <span>Copyrightⓒ 2019 LUNA All rights reserved.</span>
+    </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-
+import list from '../assets/achievement.json';
 @Component
 export default class Main extends Vue {
+  public list = list;
 }
 </script>
 
@@ -20,18 +56,86 @@ body.achievement {
 
 <style lang="scss" scoped>
 #Achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../assets/img/star.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  img {
+    max-width: 200px;
+  }
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  &>div {
+    margin-bottom: 20px;
+  }
+  &>div:last-child {
+    margin-bottom: 0;
+  }
+  .subdesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col {
+    display: inline-block;
+  }
+  .big {
+    font-size: 70px;
+  }
+  span {
+    font-size: 20px;
+  }
+  img {
+    max-width: 100px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+  img:first-child {
+    margin-left: 0;
+  }
+}
+#list {
+  .row {
+    margin-bottom: 20px;
+    .name {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      vertical-align: middle;
+      margin-bottom: 5px;
+      &::before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin-right: 10px;
+        background-size: 100%;
+        background-image: url(../assets/img/moon.png);
+      }
+    }
+    .desc {
+      margin-left: 35px;
+      text-align: left;
+    }
+  }
 }
 .bg {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
 }
 .bottom {
-  position: absolute;
-  left: 25px;
-  bottom: 25px;
-  text-align: left;
+  position: relative;
+  margin-top: -90px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 10px;
 }
@@ -40,9 +144,12 @@ body.achievement {
     padding: 10px;
   }
   &-item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
     img {
       width: 30px;
-      margin-right: 10px;
     }
   }
 }
