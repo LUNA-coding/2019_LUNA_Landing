@@ -18,13 +18,13 @@ const router = new Router({
       path: '/achievement',
       name: 'achievement',
       component: Achievement,
-    }
+    },
   ],
 });
 
 router.afterEach((to, from) => {
   Vue.nextTick(() => {
-    if(to.name !== undefined) { document.body.className = to.name; }
+    if (to.name !== undefined) { document.body.className = to.name; }
   });
 });
 
