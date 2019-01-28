@@ -39,7 +39,7 @@ body {
 }
 
 .page-enter-active, .page-leave-active {
-  transition: opacity .3s ease;
+  transition: opacity .7s ease;
 }
 .page-enter, .page-leave-to
 /* .component-fade-leave-active below version 2.1.8 */ {
