@@ -28,6 +28,7 @@ export default class App extends Vue {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 section {
   flex: 1;

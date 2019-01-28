@@ -25,8 +25,20 @@ export default class LUNA_Header extends Vue {
 <style lang="scss">
 .__luna_header {
   display: flex;
-  padding: 25px;
+  padding: 10px;
   justify-content: center;
   z-index: 1000;
+  @media (min-width: $screen-tablet) {
+    width: $container-sm;
+    padding: 15px;
+  }
+  @media (min-width: $screen-desktop) {
+    width: $container-md;
+    padding: 20px;
+  }
+  @media (min-width: $screen-lg-desktop) {
+    width: $container-lg;
+    padding: 25px;
+  }
 }
 </style>
