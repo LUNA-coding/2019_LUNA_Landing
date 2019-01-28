@@ -1,6 +1,7 @@
 <template>
   <router-link :class="{
     '__luna_header_nav_item': true,
+    '__luna_header_nav_item_image': type==='image',
     '__luna_header_nav_item_active': isActive
     }"
     :to="link">
@@ -14,6 +15,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component
 export default class LUNA_NavItem extends Vue {
   @Prop({ default: '' }) public link!: string;
+  @Prop({ default: '' }) public type!: string;
   get isActive(): boolean {
     return this.$route.path === this.link;
   }
@@ -34,6 +36,16 @@ export default class LUNA_NavItem extends Vue {
     color: #fff;
     font-weight: bold;
     border-bottom: 2px solid #fff;
+  }
+  &_image {
+    padding: 0;
+    img {
+      height: 50px;
+      vertical-align: middle;
+    }
+  }
+  &_active.__luna_header_nav_item_image {
+    border-bottom: none;
   }
 }
 </style>
