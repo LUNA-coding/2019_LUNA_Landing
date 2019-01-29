@@ -11,5 +11,9 @@ module.exports = {
         data: '@import "@/assets/scss/global.scss";'
       }
     }
+  },
+  devServer: {
+    port: '80',
+    disableHostCheck: true,
   }
 }
