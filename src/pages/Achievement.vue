@@ -61,19 +61,32 @@ body.achievement {
   align-items: center;
   background-image: url('../assets/img/star.png');
   background-position: center;
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .top {
   display: flex;
   flex-direction: column;
   img {
-    max-width: 200px;
+    max-width: 140px;
+    @media (min-width: $screen-tablet) {
+      max-width: 170px;
+    }
+    @media (min-width: $screen-desktop) {
+      max-width: 200px;
+    }
   }
 }
 .description {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 10px 10px 30px 10px;
+  @media (min-width: $screen-tablet) {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: $screen-desktop) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   &>div {
     margin-bottom: 20px;
   }
@@ -89,42 +102,94 @@ body.achievement {
     display: inline-block;
   }
   .big {
-    font-size: 70px;
+    font-size: 30px;
+    @media (min-width: $screen-tablet) {
+      font-size: 50px;
+    }
+    @media (min-width: $screen-desktop) {
+      font-size: 70px;
+    }
   }
   span {
-    font-size: 20px;
+    font-size: 16px;
+    @media (min-width: $screen-tablet) {
+      font-size: 18px;
+    }
+    @media (min-width: $screen-desktop) {
+      font-size: 20px;
+    }
   }
   img {
-    max-width: 100px;
     vertical-align: middle;
-    margin: 0 10px;
+    margin: 0 5px;
+    max-width: 40px;
+    @media (min-width: $screen-tablet) {
+      margin: 0 7px;
+      max-width: 70px;
+    }
+    @media (min-width: $screen-desktop) {
+      margin: 0 10px;
+      max-width: 100px;
+    }
   }
   img:first-child {
     margin-left: 0;
   }
 }
 #list {
+  padding: 0 10px;
   .row {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: $screen-desktop) {
+      margin-bottom: 20px;
+    }
     .name {
       display: flex;
       align-items: center;
-      font-size: 20px;
+      font-size: 16px;
       vertical-align: middle;
       margin-bottom: 5px;
+      @media (min-width: $screen-tablet) {
+        font-size: 18px;
+      }
+      @media (min-width: $screen-desktop) {
+        font-size: 20px;
+      }
       &::before {
         content: '';
-        width: 25px;
-        height: 25px;
         display: inline-block;
-        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
         background-size: 100%;
         background-image: url(../assets/img/moon.png);
+        @media (min-width: $screen-tablet) {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+        @media (min-width: $screen-desktop) {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
       }
     }
     .desc {
-      margin-left: 35px;
+      margin-left: 15px;
+      font-size: 12px;
       text-align: left;
+      @media (min-width: $screen-tablet) {
+        margin-left: 25px;
+        font-size: 14px;
+      }
+      @media (min-width: $screen-desktop) {
+        margin-left: 35px;
+        font-size: 16px;
+      }
     }
   }
 }
