@@ -1,15 +1,19 @@
 <template>
   <header class="__luna_header">
     <LUNA-NavList>
-      <LUNA-NavItem link="/luna">LUNA</LUNA-NavItem>
-      <LUNA-NavItem link="/2018">2018</LUNA-NavItem>
-      <LUNA-NavItem link="/2019">2019</LUNA-NavItem>
-      <LUNA-NavItem link="/achievement">Achievement</LUNA-NavItem>
+      <div>
+        <LUNA-NavItem link="/luna">LUNA</LUNA-NavItem>
+        <LUNA-NavItem link="/2018">2018</LUNA-NavItem>
+        <LUNA-NavItem link="/2019">2019</LUNA-NavItem>
+        <LUNA-NavItem link="/achievement">Achievement</LUNA-NavItem>
+      </div>
       <LUNA-NavItem link="/" type="image"><img src="@/assets/img/logo.png"></LUNA-NavItem>
-      <LUNA-NavItem link="/member">Member</LUNA-NavItem>
-      <LUNA-NavItem link="/cooperation">Cooperation</LUNA-NavItem>
-      <LUNA-NavItem link="/galaxy">Galaxy</LUNA-NavItem>
-      <LUNA-NavItem link="/faq">FAQ</LUNA-NavItem>
+      <div>
+        <LUNA-NavItem link="/member">Member</LUNA-NavItem>
+        <LUNA-NavItem link="/cooperation">Cooperation</LUNA-NavItem>
+        <LUNA-NavItem link="/galaxy">Galaxy</LUNA-NavItem>
+        <LUNA-NavItem link="/faq">FAQ</LUNA-NavItem>
+      </div>
     </LUNA-NavList>
   </header>
 </template>

@@ -36,6 +36,7 @@ body.main {
 
 <style lang="scss" scoped>
 #Main {
+  width: 100vw;
 }
 .bg {
   position: absolute;
