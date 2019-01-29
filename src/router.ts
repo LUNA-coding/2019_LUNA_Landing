@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Main from './pages/Main.vue';
 import Achievement from './pages/Achievement.vue';
+import Member from './pages/Member.vue';
 
 Vue.use(Router);
 
@@ -18,6 +19,11 @@ const router = new Router({
       path: '/achievement',
       name: 'achievement',
       component: Achievement,
+    },
+    {
+      path: '/member',
+      name: 'member',
+      component: Member,
     },
   ],
 });

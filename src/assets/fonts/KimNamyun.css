@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'KimNamyun';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./KimNamyun.eot);
+  src: url(./KimNamyun.eot?#iefix) format('embedded-opentype'),
+    url(./KimNamyun.woff2) format('woff2'),
+    url(./KimNamyun.woff) format('woff'),
+    url(./KimNamyun.ttf) format('truetype');
+}
