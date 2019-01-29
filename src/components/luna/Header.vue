@@ -1,5 +1,5 @@
 <template>
-  <header class="__luna_header">
+  <header class="__luna-header">
     <LUNA-NavList>
       <div>
         <LUNA-NavItem link="/luna">LUNA</LUNA-NavItem>
@@ -27,7 +27,7 @@ export default class LUNA_Header extends Vue {
 </script>
 
 <style lang="scss">
-.__luna_header {
+.__luna-header {
   display: flex;
   padding: 10px;
   justify-content: center;

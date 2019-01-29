@@ -1,5 +1,5 @@
 <template>
-  <nav class="__luna_header_nav_list">
+  <nav class="__luna-header-nav-list">
     <slot/>
   </nav>
 </template>
@@ -13,7 +13,7 @@ export default class LUNA_NavList extends Vue {
 </script>
 
 <style lang="scss">
-.__luna_header_nav_list {
+.__luna-header-nav-list {
   display: flex;
   align-items: center;
   flex-direction: column;

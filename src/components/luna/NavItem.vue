@@ -1,8 +1,8 @@
 <template>
   <router-link :class="{
-    '__luna_header_nav_item': true,
-    '__luna_header_nav_item_image': type==='image',
-    '__luna_header_nav_item_active': isActive
+    '__luna-header-nav-item': true,
+    '__luna-header-nav-item-image': type==='image',
+    '__luna-header-nav-item-active': isActive
     }"
     :to="link">
     <slot/>
@@ -23,7 +23,7 @@ export default class LUNA_NavItem extends Vue {
 </script>
 
 <style lang="scss">
-.__luna_header_nav_item {
+.__luna-header-nav-item {
   box-sizing: border-box;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.5);
@@ -45,7 +45,7 @@ export default class LUNA_NavItem extends Vue {
     margin: 0 27px;
     font-size: 23px;
   }
-  &_active {
+  &-active {
     color: #fff;
     font-weight: bold;
     border-bottom: 1px solid #fff;
@@ -53,7 +53,7 @@ export default class LUNA_NavItem extends Vue {
       border-bottom: 2px solid #fff;
     }
   }
-  &_image {
+  &-image {
     padding: 0;
     img {
       height: 30px;
@@ -69,7 +69,7 @@ export default class LUNA_NavItem extends Vue {
       }
     }
   }
-  &_active.__luna_header_nav_item_image {
+  &-active.__luna-header-nav-item-image {
     border-bottom: none;
   }
 }
