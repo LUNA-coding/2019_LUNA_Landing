@@ -41,9 +41,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import list from '../assets/achievement.json';
+import list from '../assets/json/achievement.json';
 @Component
-export default class Main extends Vue {
+export default class Achievement extends Vue {
   public list = list;
 }
 </script>
