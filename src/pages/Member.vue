@@ -38,11 +38,18 @@ body.member {
   margin: 50px 0;
 }
 .list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 50px;
 }
 .title {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
+  @media (min-width: $screen-tablet) {
+    text-align: left;
+  }
   &::before {
     content: '';
     display: inline-block;
