@@ -4,6 +4,7 @@ import Main from './pages/Main.vue';
 import Achievement from './pages/Achievement.vue';
 import Member from './pages/Member.vue';
 import LUNA from './pages/LUNA.vue';
+import P2018 from './pages/P2018.vue';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ const router = new Router({
       path: '/luna',
       name: 'luna',
       component: LUNA,
+    },
+    {
+      path: '/2018',
+      name: 'p2018',
+      component: P2018,
     },
   ],
 });
