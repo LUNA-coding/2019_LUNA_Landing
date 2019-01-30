@@ -55,7 +55,7 @@ body.luna {
 #LUNA {
   box-sizing: border-box;
   max-width: 100%;
-  background-image: url('../assets/img/bg_2018.png');
+  background-image: url('../assets/img/bg_star.png');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;

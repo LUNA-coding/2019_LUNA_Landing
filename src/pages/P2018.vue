@@ -34,6 +34,12 @@ body.p2018 {
 
 <style lang="scss" scoped>
 #P2018 {
+  box-sizing: border-box;
+  max-width: 100%;
+  background-image: url('../assets/img/bg_star.png');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 .slogan {
   max-width: 50%;
