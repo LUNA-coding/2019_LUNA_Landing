@@ -52,7 +52,7 @@ body.luna {
 </style>
 
 <style lang="scss" scoped>
-#P2018 {
+#LUNA {
   box-sizing: border-box;
   max-width: 100%;
   background-image: url('../assets/img/bg_2018.png');
