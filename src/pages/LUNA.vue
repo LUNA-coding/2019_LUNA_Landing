@@ -1,5 +1,5 @@
 <template>
-  <section id="P2018" class="section container">
+  <section id="LUNA" class="section container">
     <div class="paragraph paragraph-left">
       <img class="image" src="@/assets/img/lunaslogan.png">
       <div class="message">
@@ -41,12 +41,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class P2018 extends Vue {
+export default class LUNA extends Vue {
 }
 </script>
 
 <style lang="scss">
-body.p2018 {
+body.luna {
   background-image: radial-gradient(#437ab5, #061d4e);
 }
 </style>
