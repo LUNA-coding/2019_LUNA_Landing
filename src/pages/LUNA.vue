@@ -47,7 +47,7 @@ export default class LUNA extends Vue {
 
 <style lang="scss">
 body.luna {
-  background-image: radial-gradient(#437ab5, #061d4e);
+  background-image: linear-gradient(#031444, #396ba3);
 }
 </style>
 
