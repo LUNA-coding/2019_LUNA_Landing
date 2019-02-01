@@ -74,7 +74,6 @@ article {
     min-width: 0;
     min-height: 0;
     object-fit: contain;
-    transform: rotate(-50deg);
   }
   .content {
     flex: 1;
