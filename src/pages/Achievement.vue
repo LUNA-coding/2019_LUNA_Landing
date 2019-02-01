@@ -28,14 +28,6 @@
         <div class="desc">{{p[1]}}</div>
       </div>
     </div>
-    <img class="bg" src="@/assets/img/bg_achievement.png">
-    <div class="bottom">
-      <div class="social-list">
-        <a class="social-item" href="https://fb.com/lunacoding" target="_blank"><img src="@/assets/img/ic_facebook.png"></a>
-        <a class="social-item" href="https://github.com/LUNA-DIMIGO" target="_blank"><img src="@/assets/img/ic_github.png"></a>
-      </div>
-      <span>Copyrightⓒ 2019 LUNA All rights reserved.</span>
-    </div>
   </section>
 </template>
 
@@ -190,31 +182,6 @@ body.achievement {
         margin-left: 35px;
         font-size: 16px;
       }
-    }
-  }
-}
-.bg {
-  width: 100%;
-  z-index: 0;
-}
-.bottom {
-  position: relative;
-  margin-top: -90px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 10px;
-}
-.social {
-  &-list {
-    padding: 10px;
-  }
-  &-item {
-    margin-right: 10px;
-    &:last-child {
-      margin-right: 0;
-    }
-    img {
-      width: 30px;
     }
   }
 }

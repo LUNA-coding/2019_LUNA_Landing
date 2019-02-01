@@ -2,8 +2,9 @@
   <div id="luna">
     <LUNA-Header/>
     <transition name="page">
-    <router-view/>
+      <router-view/>
     </transition>
+    <LUNA-Footer v-if="$route.name !== 'main'"/>
   </div>
 </template>
 
