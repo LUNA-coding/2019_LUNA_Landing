@@ -1,6 +1,6 @@
 <template>
   <section id="Main" class="section">
-    <img class="bg" ref="bg" src="@/assets/img/bg_main.png">
+    <img class="bg" id="main_bg" ref="bg" src="@/assets/img/bg_main.png">
     <div class="bg2" :style="{'top': `calc(50% + ${bgHeight/2}px)`}"></div>
     <div class="bottom">
       <div class="social-list">
@@ -21,7 +21,8 @@ export default class Main extends Vue {
   private mounted() {
     const setBgHeight = () => {
       if(this.$refs.bg) {
-        this.bgHeight = this.$refs.bg.clientHeight - 2;
+        const bgEle = document.getElementById('main_bg') as HTMLElement;
+        this.bgHeight = bgEle.clientHeight - 2;
         setTimeout(setBgHeight, 100);
       }
     };
