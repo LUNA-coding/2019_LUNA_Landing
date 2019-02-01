@@ -7,6 +7,7 @@ import LUNA from './pages/LUNA.vue';
 import P2018 from './pages/P2018.vue';
 import Cooperation from './pages/Cooperation.vue';
 import FAQ from './pages/FAQ.vue';
+import P2019 from './pages/P2019.vue';
 
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ const router = new Router({
       path: '/faq',
       name: 'faq',
       component: FAQ,
+    },
+    {
+      path: '/2019',
+      name: 'p2019',
+      component: P2019,
     },
   ],
 });
