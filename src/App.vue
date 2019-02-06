@@ -1,7 +1,7 @@
 <template>
   <div id="luna">
     <LUNA-Header/>
-    <transition name="page">
+    <transition name="page" mode="out-in">
       <router-view/>
     </transition>
     <LUNA-Footer v-if="$route.name !== 'main'"/>
