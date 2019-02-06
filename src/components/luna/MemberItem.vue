@@ -63,6 +63,7 @@ export default class LUNA_MemberItem extends Vue {
     span {
       margin-right: 5px;
       word-break: keep-all;
+      display: inline-block;
     }
   }
   &-desc {

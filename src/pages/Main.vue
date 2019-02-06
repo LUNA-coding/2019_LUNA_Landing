@@ -20,7 +20,7 @@ export default class Main extends Vue {
   private bgHeight = 0;
   private mounted() {
     const setBgHeight = () => {
-      if(this.$refs.bg) {
+      if (this.$refs.bg) {
         const bgEle = document.getElementById('main_bg') as HTMLElement;
         this.bgHeight = bgEle.clientHeight - 2;
         setTimeout(setBgHeight, 100);
